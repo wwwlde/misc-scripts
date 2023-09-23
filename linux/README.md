@@ -1,0 +1,5 @@
+# Linux
+
+ - [`fdswap.sh`](fdswap.sh) - This script is designed to redirect the file descriptors of one or more running processes specified by their PIDs from a source file (src) to a destination file (dst) using the GNU Debugger (gdb). This could be useful for tasks like log file rotation or other situations where you need to switch a process from writing to one file to another without stopping the process itself.
+ - [`isolate-guest-wifi.sh`](isolate-guest-wifi.sh) - This script is used to configure a guest network on ASUS RT-AC52U_B1. It creates a separate network segment, assigns IP addresses, configures DHCP, and sets up routing and firewall rules to isolate the guest network from the main network while still allowing internet access. ** Obsolete **
+ - [`dump-all-memory-of-pid.sh`](dump-all-memory-of-pid.sh) - This script takes a process PID as an argument, extracts the memory ranges with read-write permissions from the `/proc/<pid>/maps` file, and then uses gdb to dump the memory content of those ranges into individual dump files. This can be useful for memory analysis and debugging purposes.
